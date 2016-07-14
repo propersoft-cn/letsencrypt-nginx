@@ -1,9 +1,7 @@
-# 公司https服务器配置
+# 基于docker,nginx,let's encrypt 的https服务器配置指南
 
-公司https服务器，采用基于docker容器的方式布署，使用nginx web server 做的反向代理，后端的业务系统都通过nginx来对外访问。
+https服务器，可以采用基于docker容器的方式布署，使用nginx web server 做的反向代理，后端的业务系统都通过nginx来对外访问。
 
-服务器地址：[https://server.propersoft.cn](https://server.propersoft.cn)
-[YouTrack地址](https://server.propersoft.cn/youtrack)
 
 https证书使用[let's encrypt](https://letsencrypt.org/)的免费证书方案。
 服务端使用两个开源镜像，需要提前docker pull 好到电脑上，另外，需要安装[docker-compose](http://www.docker.com/products/docker-compose)命令。
